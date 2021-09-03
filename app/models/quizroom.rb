@@ -1,0 +1,2 @@
+class Quizroom < ApplicationRecord
+end
