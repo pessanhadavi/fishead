@@ -21,9 +21,25 @@ ul {
   height: 50px;
   width: 50px;
   background-color: #DCE7F7;
-  border: 5px solid #8dcbfd;
+  border: 5px solid $light-blue;
   border-radius: 50%;
   display: inline-block;
   font-size: 29px;
   text-align: center;
+}
+
+.quizroom-links span{
+  font-weight: bold;
+}
+
+.quizroom-links:hover {
+  .hashtag{
+    color:white;
+    background-color: $light-blue;
+    border-color: #DCE7F7;
+  }
+
+  span {
+    border-bottom: 2px solid $light-blue;
+  }
 }

@@ -2,11 +2,12 @@
   <div class="text-left">
     <h1>Olá, <%= current_user.teacher ? "Prof. #{current_user.name}" : current_user.name %>!</h1>
   </div>
-  <div class="quizroom-list-wrapper">
+  <h3>Aulas disponíveis:</h3>
+  <div class="quizroom-list-wrapper row justify-content-center mt-4">
     <ul>
       <% @quizrooms.each do |quizroom| %>
         <li>
-          <%= link_to quizroom_path(quizroom) do %>
+          <%= link_to quizroom_path(quizroom), class: "quizroom-links" do %>
             <div class="d-flex align-items-center">
               <div class="hashtag mr-2">
                 <i class="fab fa-slack-hash"></i>
