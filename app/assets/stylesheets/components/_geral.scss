@@ -16,6 +16,8 @@ a:hover {
 }
 
 .back-btn:hover {
-  border-bottom: 2px solid $light-blue;
-  padding:0;
+  span {
+    border-bottom: 2px solid $light-blue;
+  }
+  
 }
