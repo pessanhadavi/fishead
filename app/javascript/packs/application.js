@@ -12,8 +12,9 @@ import "bootstrap";
 import { initQuizroomCable } from '../channels/quizroom_channel';
 
 // Internal imports, e.g:
-
+import { initAnswerAnalyzer } from '../components/answers';
 
 document.addEventListener('turbolinks:load', () => {
   initQuizroomCable();
+  initAnswerAnalyzer();
 });
