@@ -6,3 +6,18 @@
   background-color: #DCE7F7;
   margin-bottom: 20px;
 }
+
+.answer-item {
+  border: 1px solid $light-blue;
+  border-radius: 5px;
+  padding: 10px 10px 0 10px;
+  color: black;
+}
+
+.answer-green {
+  background-color: rgba(162, 255, 162, 0.507);
+}
+
+.answer-red {
+  background-color: rgba(255, 162, 162, 0.507);
+}
