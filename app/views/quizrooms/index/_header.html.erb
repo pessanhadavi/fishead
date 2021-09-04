@@ -1,0 +1,8 @@
+<div class="quizroom-header d-flex justify-content-between align-items-center mb-4">
+  <div class="text-left">
+    <h1>Olá, <%= current_user.teacher ? "Prof. #{current_user.name}" : current_user.name %>!</h1>
+  </div>
+  <div class="avatar">
+    <%= image_tag "https://static.vecteezy.com/system/resources/previews/002/275/847/original/male-avatar-profile-icon-of-smiling-caucasian-man-vector.jpg" %>
+  </div>
+</div>

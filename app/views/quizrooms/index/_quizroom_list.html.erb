@@ -1,0 +1,16 @@
+<div class="quizroom-list-wrapper row justify-content-center mt-4">
+  <ul>
+    <% quizrooms.each do |quizroom| %>
+      <li>
+        <%= link_to quizroom_path(quizroom), class: "quizroom-links" do %>
+          <div class="d-flex align-items-center">
+            <div class="hashtag mr-2">
+              <i class="fab fa-slack-hash"></i>
+            </div>
+            <span><%= quizroom.name %></span>
+          </div>
+        <% end %>
+      </li>
+    <% end %>
+  </ul>
+</div>
