@@ -1,6 +1,8 @@
-<h1>Questões sobre <%= @quizroom.name %></h1>
-<% @questions.each do |question| %>
-  <%= link_to quizroom_question_path(@quizroom, question) do %>
-    <li><%= question.utterance %></li>
+<div class="card-white">
+  <h1>Questões sobre <%= @quizroom.name %></h1>
+  <% @questions.each do |question| %>
+    <%= link_to quizroom_question_path(@quizroom, question) do %>
+      <li><%= question.utterance %></li>
+    <% end %>
   <% end %>
-<% end %>
+</div>
