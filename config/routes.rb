@@ -4,5 +4,6 @@ Rails.application.routes.draw do
 
   resources :quizrooms, only: [ :show ] do
     resources :questions, only: [ :show ]
+    resources :answers, only: [ :create ]
   end
 end
