@@ -5,7 +5,13 @@ class AnswersController < ApplicationController
     @answer.question = @answer.choice.question
     @answer.quizroom = @quizroom
     @answer.user = current_user
-    redirect_to quizroom_path(@answer.quizroom) if @answer.save
+    if @answer.save
+      QuizroomChannel.broadcast_to(
+        @quizroom,
+        render_to_string(partial: "./questions/answer", locals: { answer: @answer })
+      )
+      redirect_to quizroom_path(@answer.quizroom)
+    end
   end
 
   private
