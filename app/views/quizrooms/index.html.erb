@@ -6,7 +6,12 @@
     <ul>
       <% @quizrooms.each do |quizroom| %>
         <li>
-          <%= link_to "##{quizroom.name}", quizroom_path(quizroom) %>
+          <%= link_to quizroom_path(quizroom) do %>
+            <div class="hashtag">
+              <i class="fab fa-slack-hash"></i>
+            </div>
+            <span><%= quizroom.name %></span>
+          <% end %>
         </li>
       <% end %>
     </ul>
