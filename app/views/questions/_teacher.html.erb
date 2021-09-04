@@ -1,4 +1,6 @@
-<h1><%= question.utterance %></h1>
+<div class="question-header">
+  <h1><%= question.utterance %></h1>
+</div>
 <h2>Respostas:</h2>
 <div id="answers" data-quizroom-id="<%= question.quizroom.id %>">
   <% answers.each do |answer| %>
