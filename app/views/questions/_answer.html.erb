@@ -1,7 +1,15 @@
-<div class="answer-container" id="answer-<%= answer.id %>">
-  <li>
-    <h3>Nome: <%= answer.user.name %></h3>
-    <p>Resposta: <%= answer.choice.option %></p>
-    <p>Certa ou errada: <%= answer.choice.correct_option ? "Certa" : "Errada" %></p>
-  </li>
-</div>
+<ul>
+  <div class="answer-container" id="answer-<%= answer.id %>">
+    <li>
+      <div class="answer-item">
+        <div class="answer-info">
+          <h3>Nome: <%= answer.user.name %></h3>
+          <p>Resposta: <%= answer.choice.option %></p>
+        </div>
+        <div class="answer-correction">
+          <p><%= answer.choice.correct_option ? "Correta" : "Errada" %></p>
+        </div>
+      </div>
+    </li>
+  </div>
+</ul>
