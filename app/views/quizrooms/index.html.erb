@@ -1,10 +1,14 @@
 <div class="card-white">
   <div class="text-left">
-  <h1>Olá, <%= current_user.teacher ? "Prof. #{current_user.name}" : current_user.name %>!</h1>
+    <h1>Olá, <%= current_user.teacher ? "Prof. #{current_user.name}" : current_user.name %>!</h1>
   </div>
-  <% @quizrooms.each do |quizroom| %>
-    <%= link_to quizroom_path(quizroom) do %>
-      <li>#<%= quizroom.name %></li>
-    <% end %>
-  <% end %>
+  <div class="quizroom-list-wrapper">
+    <ul>
+      <% @quizrooms.each do |quizroom| %>
+        <li>
+          <%= link_to "##{quizroom.name}", quizroom_path(quizroom) %>
+        </li>
+      <% end %>
+    </ul>
+  </div>
 </div>
