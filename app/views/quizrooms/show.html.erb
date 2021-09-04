@@ -1,8 +1,15 @@
 <div class="card-white">
-  <h1>Questões sobre <%= @quizroom.name %></h1>
-  <% @questions.each do |question| %>
-    <%= link_to quizroom_question_path(@quizroom, question) do %>
-      <li><%= question.utterance %></li>
+  <h1><i class="fab fa-slack-hash"></i> <%= @quizroom.name %></h1>
+  <h2>Questões:</h2>
+  <ul>
+    <% @questions.each do |question| %>
+      <li>
+        <%= link_to quizroom_question_path(@quizroom, question) do %>
+        <div class="d-flex align-items-center">
+          <%= question.utterance %>
+        </div>
+        <% end %>
+      </li>
     <% end %>
-  <% end %>
+  </ul>
 </div>
