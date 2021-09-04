@@ -7,9 +7,9 @@
       <ul>
         <% @questions.each do |question| %>
           <li>
-            <%= link_to quizroom_question_path(@quizroom, question) do %>
-              <div class="question-item mb-2 py-2">
-                <%= question.utterance %>
+            <%= link_to quizroom_question_path(@quizroom, question), class:"question-links" do %>
+              <div class="question-item mb-2 py-2 px-3">
+                <span><%= question.utterance %></span>
               </div>
             <% end %>
           </li>
