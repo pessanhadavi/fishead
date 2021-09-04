@@ -1,0 +1,7 @@
+<div class="answer-container" id="answer-<%= answer.id %>">
+  <li>
+    <h3>Nome: <%= answer.user.name %></h3>
+    <p>Resposta: <%= answer.choice.option %></p>
+    <p>Certa ou errada: <%= answer.choice.correct_option ? "Certa" : "Errada" %></p>
+  </li>
+</div>
