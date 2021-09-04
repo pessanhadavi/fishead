@@ -14,3 +14,8 @@ a:hover {
   text-decoration: none;
   color:$dark-blue;
 }
+
+.back-btn:hover {
+  border-bottom: 2px solid $light-blue;
+  padding:0;
+}
