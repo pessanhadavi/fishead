@@ -1,6 +1,6 @@
 # Definindo constantes
 PIC_1 = "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/3a/3a0f7411ebc4f7709a8b307be93c233e3c87dc95_full.jpg"
-PIC_2 = "https://i.ytimg.com/vi/cP2j4pNS2NA/maxresdefault.jpg"
+PIC_2 = "http://parksandrecreationfanbase.weebly.com/uploads/7/9/8/5/7985207/1432572.png"
 PIC_3 = "https://pbs.twimg.com/profile_images/872505426482483200/_rGqnDSY_400x400.jpg"
 
 # Limpando database
