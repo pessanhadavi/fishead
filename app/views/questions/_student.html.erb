@@ -1,7 +1,5 @@
+<%= render 'questions/show_shared/question_header', question: question %>
 <div class="quiz-container">
-  <div class="question-container">
-    <h1 id="display-question"><%= question.utterance %></h1>
-  </div>
   <div class="options-container">
     <%= simple_form_for answer, url: quizroom_answers_path(question.quizroom) do |f| %>
       <%= f.collection_radio_buttons :choice_id, choice_array, :first, :last do |b| %>
