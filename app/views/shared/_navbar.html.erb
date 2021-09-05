@@ -11,7 +11,7 @@
             <%= link_to "Log out", destroy_user_session_path, method: :delete, class: "nav-link" %>
           </li>
           <li class="nav-item">
-            <%= image_tag "https://static.vecteezy.com/system/resources/previews/002/275/847/original/male-avatar-profile-icon-of-smiling-caucasian-man-vector.jpg", class: "nav-avatar" %>
+            <%= image_tag current_user.url_pic, class: "nav-avatar" %>
           </li>
         </div>
       <% else %>
