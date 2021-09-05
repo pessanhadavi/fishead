@@ -8,7 +8,7 @@ class AnswersController < ApplicationController
     if @answer.save
       QuizroomChannel.broadcast_to(
         @quizroom,
-        render_to_string(partial: "./questions/answer", locals: { answer: @answer })
+        render_to_string(partial: "./questions/show_teacher/answer", locals: { answer: @answer })
       )
       redirect_to quizroom_path(@answer.quizroom)
     end
