@@ -19,13 +19,13 @@ label{
   color: black;
   margin: 0;
 }
-//display: none;
- .option-selected {
-  background-color: $light-blue;
+
+.option-selected {
+background-color: $light-blue;
   label {
     color: white;
   }
- }
+}
 
 .btn-quiz {
   color: white;
@@ -37,4 +37,8 @@ label{
     color: white;
     opacity: .8;
  }
+}
+
+input[type="radio"] {
+  display: none;
 }
