@@ -1,6 +1,9 @@
 .choice-item {
   border: 2px solid $light-blue;
   border-radius: 50px;
+  &:hover {
+    background-color: $light-blue;
+  } 
 }
 
 label{
@@ -16,9 +19,6 @@ label{
   margin: 0;
 }
 
-label:hover{
-  -ms-transform: scale(1.12);
-  -webkit-transform: scale(1.12);
-  transform: scale(1.12);
+.quizform-container label:hover{
   color: white;
 }
