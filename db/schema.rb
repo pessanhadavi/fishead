@@ -12,11 +12,14 @@
 
 ActiveRecord::Schema.define(version: 2021_09_05_213655) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "answers", force: :cascade do |t|
-    t.integer "choice_id", null: false
-    t.integer "question_id", null: false
-    t.integer "quizroom_id", null: false
-    t.integer "user_id", null: false
+    t.bigint "choice_id", null: false
+    t.bigint "question_id", null: false
+    t.bigint "quizroom_id", null: false
+    t.bigint "user_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["choice_id"], name: "index_answers_on_choice_id"
@@ -28,8 +31,8 @@ ActiveRecord::Schema.define(version: 2021_09_05_213655) do
   create_table "choices", force: :cascade do |t|
     t.text "option"
     t.boolean "correct_option", default: false
-    t.integer "question_id", null: false
-    t.integer "quizroom_id", null: false
+    t.bigint "question_id", null: false
+    t.bigint "quizroom_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["question_id"], name: "index_choices_on_question_id"
@@ -39,8 +42,8 @@ ActiveRecord::Schema.define(version: 2021_09_05_213655) do
   create_table "questions", force: :cascade do |t|
     t.text "utterance"
     t.string "subject"
-    t.integer "quizroom_id", null: false
-    t.integer "user_id", null: false
+    t.bigint "quizroom_id", null: false
+    t.bigint "user_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["quizroom_id"], name: "index_questions_on_quizroom_id"
