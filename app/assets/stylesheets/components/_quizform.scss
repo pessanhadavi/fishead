@@ -24,3 +24,14 @@ label{
 //    display: none;
 //  }
 
+.btn-quiz {
+  color: white;
+  font-weight: bold;
+  background-color: $dark-blue;
+  padding: 10px 25px;
+  border-radius: 10px;
+   &:hover {
+    color: white;
+    opacity: .8;
+ }
+}
