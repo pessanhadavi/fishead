@@ -1,0 +1,6 @@
+<%= render 'questions/show_shared/question_header', question: question %>
+<div class="choice-container row justify-content-center mt-4 text-center">
+  <div class="col-lg-8">
+    <%= render 'questions/show_student/quizform', question: question, answer: answer, choice_array: choice_array %>
+  </div>
+</div>
