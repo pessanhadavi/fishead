@@ -1,0 +1,20 @@
+.footer {
+  background-color: $dark-blue;
+  padding: 15px 0;
+  text-align: center;
+}
+
+.footer a {
+  font-size: 30px;
+  color: $light-purple;
+  margin: 0 5px;
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+.footer p {
+  color: #5c5b5b;
+  font-size: 15px;
+  padding-top: 15px;
+}
