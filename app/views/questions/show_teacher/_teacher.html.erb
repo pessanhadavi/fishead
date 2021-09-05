@@ -7,6 +7,6 @@
 <h2>Respostas:</h2>
 <div id="answers" data-quizroom-id="<%= question.quizroom.id %>">
   <% answers.each do |answer| %>
-    <%= render 'questions/answer', answer: answer %>
+    <%= render 'questions/show_teacher/answer', answer: answer %>
   <% end %>
 </div>

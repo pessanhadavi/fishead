@@ -1,5 +1,5 @@
 <% if current_user.teacher %>
-  <%= render 'questions/teacher', question: @question, answers: @answers %>
+  <%= render 'questions/show_teacher/teacher', question: @question, answers: @answers %>
 <% else %>
   <%= render 'questions/student', question: @question, answer: @answer, choice_array: @choice_array %>
 <% end %>
