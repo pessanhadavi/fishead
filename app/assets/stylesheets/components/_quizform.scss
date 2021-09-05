@@ -3,6 +3,7 @@
   border-radius: 50px;
   &:hover {
     background-color: $light-blue;
+    cursor: pointer;
     label {
       color: white;
     }
@@ -19,6 +20,7 @@ label{
   margin: 0;
 }
 
-input[type="radio"] {
-  display: none;
-}
+//  input[type="radio"] {
+//    display: none;
+//  }
+
