@@ -1,0 +1,22 @@
+.navbar {
+  justify-content: space-between;
+  background: white;
+}
+
+.navbar .nav-links {
+  flex-grow: 0;
+}
+
+.navbar .navbar-logo img {
+  width: 40px;
+}
+
+.nav-avatar {
+  width: 40px;
+  border-radius: 50%;
+}
+
+.nav-item a{
+  color: $dark-blue;
+  font-weight: bold;
+}
