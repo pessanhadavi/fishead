@@ -1,13 +1,17 @@
 <%= render 'questions/show_shared/question_header', question: question %>
-<div class="quiz-container">
-  <div class="options-container">
-    <%= simple_form_for answer, url: quizroom_answers_path(question.quizroom) do |f| %>
-      <%= f.collection_radio_buttons :choice_id, choice_array, :first, :last do |b| %>
-        <%= b.label { b.radio_button + " " + b.text } %>
-      <% end %>
-      <div class="button-container">
-        <%= f.button :submit, "Responder" %>
-      </div>
-    <% end %> 
+<div class="choice-container row justify-content-center mt-4 text-center">
+  <div class="col-lg-8">
+    <div class="quizform-container">
+      <%= simple_form_for answer, url: quizroom_answers_path(question.quizroom) do |f| %>
+        <%= f.collection_radio_buttons :choice_id, choice_array, :first, :last do |b| %>
+        <div class="choice-item mb-2 py-2 px-3">
+          <%= b.label { b.radio_button + " " + b.text } %>
+          </div>
+        <% end %>
+        <div class="button-container">
+          <%= f.button :submit, "Responder" %>
+        </div>
+      <% end %> 
+    </div>
   </div>
 </div>

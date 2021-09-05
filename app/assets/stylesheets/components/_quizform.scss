@@ -1,21 +1,6 @@
-.quiz-container{
-  width: 640px;
-  height: 480px;
-  background-color: lightgray;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-  border-radius: 30px;
-}
-
-.options-container{
-  width: 80%;
-  height: 192px;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-around;
+.choice-item {
+  border: 2px solid $light-blue;
+  border-radius: 50px;
 }
 
 label{
@@ -28,6 +13,7 @@ label{
   transition: transform 0.3s;
   font-weight: 600;
   color: rgb(22, 22, 22);
+  margin: 0;
 }
 
 label:hover{
