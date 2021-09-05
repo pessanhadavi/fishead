@@ -1,3 +1,8 @@
+# Definindo constantes
+PIC_1 = "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/3a/3a0f7411ebc4f7709a8b307be93c233e3c87dc95_full.jpg"
+PIC_2 = "https://i.ytimg.com/vi/cP2j4pNS2NA/maxresdefault.jpg"
+PIC_3 = "https://pbs.twimg.com/profile_images/872505426482483200/_rGqnDSY_400x400.jpg"
+
 # Limpando database
 Answer.destroy_all
 Choice.destroy_all
@@ -6,12 +11,13 @@ Quizroom.destroy_all
 User.destroy_all
 
 # Inicializando: Quizrooms e Users
+User.create! name:"Álvaro", email:"alvaro@professor.com", password:"senha123", teacher:true, url_pic:PIC_1
+User.create! name:"Diego", email:"diego@estudante.com", password:"senha123", url_pic:PIC_2
+User.create! name:"Olívia", email:"olivia@estudante.com", password:"senha123", url_pic:PIC_3
+
 geografia_geral = Quizroom.create! name:"Geografia geral"
 astronomia = Quizroom.create! name:"Astronomia"
 geofisica = Quizroom.create! name:"Geofísica"
-teacher = User.create! name:"Thiago", email:"thiago@professor.com", password:"senha123", teacher:true
-student_a = User.create! name:"Paulo", email:"paulo@estudante.com", password:"senha123"
-student_b = User.create! name:"Olívia", email:"olivia@estudante.com", password:"senha123"
 
 # Criando Questões: Question
 def create_question(subject, utterance, quizroom, options, correct_option)
