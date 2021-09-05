@@ -6,7 +6,7 @@
 .hashtag {
   height: 50px;
   width: 50px;
-  background-color: #DCE7F7;
+  background-color: $light-purple;
   border: 5px solid $light-blue;
   border-radius: 50%;
   display: inline-block;
@@ -22,7 +22,7 @@
   .hashtag{
     color:white;
     background-color: $light-blue;
-    border-color: #DCE7F7;
+    border-color: $light-purple;
   }
 
   span {
