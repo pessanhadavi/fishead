@@ -1,0 +1,11 @@
+right_choice:
+  option: Dunder Mifflin
+  correct_option: true
+  question: dunder_question
+  quizroom: office
+
+wrong_choice:
+  option: cedae
+  correct_option: false
+  question: dunder_question
+  quizroom: office
