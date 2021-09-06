@@ -34,3 +34,8 @@ rails db:seed
 rails s
 http://localhost:3000/
 ```
+## Testes automatizados
+Para iniciar testes com rspec, no terminal:
+```
+rspec
+```
