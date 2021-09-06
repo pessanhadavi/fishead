@@ -4,4 +4,6 @@ class Question < ApplicationRecord
 
   has_many :choices
   has_many :answers
+
+  validates :utterance, :subject, presence: true
 end
