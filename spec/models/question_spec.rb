@@ -1,6 +1,12 @@
 require 'rails_helper'
 
 RSpec.describe Question, :type => :model do
+
+  Choice.destroy_all
+  Question.destroy_all
+  User.destroy_all
+  Quizroom.destroy_all
+
   fixtures :quizrooms, :users, :questions
 
   before(:each) do
