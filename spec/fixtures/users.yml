@@ -1,0 +1,13 @@
+michael:
+  name: Michael Scott
+  email: michael@professor.com
+  senha: senha
+  teacher: true
+  url_pic: imagem_qualquer
+
+pam:
+  name: Pam
+  email: pam@estudante.com
+  senha: senha
+  teacher: false
+  url_pic: outra_imagem
